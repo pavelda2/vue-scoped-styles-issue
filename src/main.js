@@ -1,8 +1,8 @@
 import Vue from "vue";
 import App from "./App.vue";
 import VueRouter from "vue-router";
-const BaseBoxPage = () => import("./pages/BaseBoxPage");
-const RedBoxPage = () => import("./pages/RedBoxPage");
+const BaseBoxPage = () => import(/* webpackChunkName: "BaseBoxPage" */ "./pages/BaseBoxPage");
+const RedBoxPage = () => import(/* webpackChunkName: "RedBoxPage" */"./pages/RedBoxPage");
 
 Vue.use(VueRouter);
 
